@@ -13,6 +13,7 @@ document.getElementById("search").onclick = function() {
 	const fromToArray = from.split("+");
 	const yourArray = tags.split(",");
 	const count = yourArray.length;
+	const count2 = fromToArray.length;
 	const list = [];
 	const list2 = [];
 	for (let i = 0; i < count; i++) {
@@ -20,7 +21,7 @@ document.getElementById("search").onclick = function() {
 		list.push(string1);
 	}
 	const newString = list.join("\n");
-	for (let j = 0; j < count; j++) {
+	for (let j = 0; j < count2; j++) {
 		const string2 = `<condition test="contains" flags="74"> <category> <name internal="LcRevitData_Element">Element</name> </category> <property> <name internal="LcRevitPropertyElementName">Equipment Number</name> </property> <value> <data type="wstring">${fromToArray[j]}</data> </value> </condition>`;
 		list2.push(string2);
 	}
