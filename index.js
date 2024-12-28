@@ -10,8 +10,8 @@ let from;
 document.getElementById("search").onclick = function() {
 	tags = document.getElementById("tag").value;
 	from = document.getElementById("from").value;
-	const fromToArray = from.split(",");
-	const yourArray = tags.split("+");
+	const fromToArray = from.split("+");
+	const yourArray = tags.split(",");
 	const count = yourArray.length;
 	const list = [];
 	const list2 = [];
