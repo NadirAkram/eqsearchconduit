@@ -33,7 +33,7 @@ document.getElementById("search").onclick = function() {
 	const fromtostring = list2.join("\n");
 
 for (let k = 0; k < count3; k++) {
-		const string3 = `<condition test="contains" flags="74"> <category> <name internal="LcRevitData_Element">Element</name> </category> <property> <name internal="LcRevitPropertyElementName">Cable Tag</name> </property> <value> <data type="wstring">${yourArray2[k]}</data> </value> </condition>`;
+		const string3 = `<condition test="contains" flags="74"> <category> <name internal="LcRevitData_Element">Element</name> </category> <property> <name internal="LcRevitPropertyElementName">Cable Tag</name> </property> <value> <data type="wstring">${yourArray3[k]}</data> </value> </condition>`;
 		list3.push(string3);
 	}
 	const cableTagString = list3.join("\n");
